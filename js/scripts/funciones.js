@@ -7,6 +7,8 @@ function chau(){
     console.log('Chau y boca campeon')
 }
 
-function color(){
-    alert('Hola crack')
+document.getElementById('A1'){
+    function color(){
+        console.log('Hola crack')
+    } 
 }
