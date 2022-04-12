@@ -10,7 +10,7 @@ function chau(){//funcion para despedir//
 
 function color(){//funcion para cambiar color//
    document.getElementById("A1").style.color= "orange";
-   document.getElementById("A1").style.color= "green";
+   document.getElementById("A1").style.backgroundColor= "green";
 }
 //funcion para volver a los colores originales//
 function volver(){
