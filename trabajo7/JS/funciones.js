@@ -60,5 +60,5 @@ function mostrar(){
 }
 
 function reset(){
-    
+    document.getElementById('nombre')
 }
