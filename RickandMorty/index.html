@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="funciones.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div id="esconder">    
+ <label for="ID_API" >Consultar api con ID:</label>   
+ <input type="number"  id="ID_API" min="1" max="826" placeholder="min:1 max:826" style="width: 200px ;" >
+ <input type="button" value="enviar" onclick="RickandMorty()" id="enviar">
+ </div>
+
+
+
+
+
+<p style="text-align:center">
+  <div id="1"></div>
+ </p>
+ 
+ <div align="center">
+ <img src=""  id="imagen" >
+ </div>
+
+ <form action="consultaBD.php" method="post" id="consultaBD">
+
+    <label for="ID_BD" >Consultar base de datos con ID:</label>
+ 
+    <input type="number" id="ID_BD" name="ID_BD">
+
+    <input type="submit" value="enviar">
+
+ </form>
+ 
+<h3></h3>
+
+<center>
+    <form action="main.php" method="post" id="form">
+     <input type="number" value="" id="Num" name="Num" hidden>
+     <input type="text" value="" id="Nom" name="Nom" hidden>
+     <input type="text" value="" id="estado" name="estado" hidden>
+     <input type="text" value="" id="especie" name="especie" hidden> 
+     <input type="text" value="" id="tipo" name="tipo" hidden>
+     <input type="text" value="" id="sexo" name="sexo" hidden>
+     <input type="text" value="" id="origen" name="origen" hidden>
+     <input type="text" value="" id="ubicacion" name="ubicacion" hidden>
+     <input type="url" value="" name="url" id="url" hidden>
+     <input type="text" value="" name="fecha" id="fecha" hidden>
+     
+     <input type="submit" value="guardar"  id="guardar" hidden>
+   
+
+    </form>
+</center>
+</body>
+</html>

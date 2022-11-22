@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="Arancel.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="index.php" method="post" >
+nombre: 
+<input type="text" name="Nombre" required> <br>
+apellido:
+<input type="text" name="Apellido"required><br>
+DNI:
+<input type="number" name="Dni" required><br>
+Profesion:
+<select name="Profesion" id="Profesion" onchange="Arancel(this.value)">
+    <option value="selecionar">-selecionar-</option>
+    <option value="docente">docente</option>
+    <option value="alumno">alumno</option> 
+</select><br>
+ arancel:
+<input type="number" name="arancel" id="arancel" value="" readonly> <br>
+
+fecha de nacimiento:
+
+<input type="date" name="Nacimiento" required><br>
+
+<input type="submit" value="enviar">
+
+</form>
+</body>
+</html>
+
+
+
+
+<!--
+    
+En El html ingresar:
+nombre:
+apellido:
+dni:
+tipo: (docente o alumno)
+arancel: si es docente 1000 alumno 500
+fecha de nacimiento:
+
+1)mostrar todos los datos 
+
+2)si es docente y es mayor de 40 anios tiene un 10% de descuento en arancel
+
+3)si es alumno y menos a 25 anios se le hace un 20% de descuento ""
+
+4)si es el cumpleanios del alumno el arancel a pagar es 0
+4)si es el cumpleanios del docente paga el doble de arancel
+5)mostrar edad
+6)si es menos a 18 no funciona
+7) pantallita donde poner un id y lo mostramos
+-->
