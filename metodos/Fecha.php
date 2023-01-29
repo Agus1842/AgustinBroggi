@@ -12,9 +12,6 @@ class date_F {
         return $dia."/".$mes."/".$anio;
     }
 
-  
-
-
 }
 
 echo date_F::getFecha();
